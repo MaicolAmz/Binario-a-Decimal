@@ -1,0 +1,69 @@
+<!DOCTYPE html><!--Autor: https://github.com/RicardoCDEV-->
+<html>
+    <head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <!--Autor: https://github.com/RicardoCDEV-->
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Conversor binario a decimal</title>
+        <!--Estilos-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <main>
+            <div class="main container">
+                <h1 class="principal-page-title mt-5 text-center">Conversión decimal - binario</h1>
+                <form id="conversion-form">
+                    <div class="row mt-5">
+                        <div class="col">
+                            <input v-model="numero" autofocus class="form-control" type="text"
+                                placeholder="Aquí ingresa el binario" id="input-1">
+                        </div>
+                        <div class="col-2">
+                            <input type="button" id="button-1" value="Convertir" class="container btn btn-outline-success">
+                        </div>
+                        <div class="conversion-result-1 container col">
+                            <p class="form-control" id="resultado1">Resultado</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col">
+                            <input v-model="numero" autofocus class="form-control" type="text"
+                                placeholder="Aquí ingresa el decimal" id="input-2">
+                        </div>
+                        <div class="col-2">
+                            <input type="button" id="button-2" value="Convertir" class="container btn btn-outline-primary">
+                        </div>
+                        <div class="conversion-result-2 container col">
+                            <p class="form-control" id="resultado2">Resultado</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="blockquote-footer" style="position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;">
+        <div class="content has-text-centered">
+            <p>
+                <strong>© 2021, </strong>
+                Humberto y Maicol
+                <br>
+            </p>
+        </div>
+    </footer>
+
+        <!-- INICIO DE SCRIPTS -->
+            <script src="js/bin-to-dec.js"></script>
+            <script src="js/dec-to-bin.js"></script>
+        <!-- FIN DE SCRIPTS -->
+    </body>
+</html>
